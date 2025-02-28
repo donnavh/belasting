@@ -9,3 +9,10 @@ Hierna is ook de introductie geweest voor de grote opdracht die de komende weken
 de eerste stappen voor genomen. Ik heb onderzoek gedaan naar forms maar wilde hier niet te lang in blijven hangen en 
 al een beetje beginnen met een opzet en stuk voor stuk elementen op een pagina gaan krijgen zodat ik dit kan beginnen met 
 stylen en gaandeweg nog onderzoek kan doen naar andere dingen als het niet lukt. 
+
+
+Voortgang week 1:
+- moet overal op kunnen werken, elk scherm en elke soort browser 
+- gegevens opgeslagen houden, hoe werkt dit 
+- interactieve elementen, als je ja of nee zegt gebeurd er misschien iets met andere vragen
+- kijk naar verschillende patterns die interessant zijn om toe te voegen 
