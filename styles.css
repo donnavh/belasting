@@ -15,10 +15,16 @@
 body{
     display: flex;
     flex-direction: column;
+    max-width: 100%;
     padding: 0;
     margin: 0;
     background-color:rgb(230, 230, 233) ;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main{
+    background-color: var(--yellow);
 }
 
 header{
@@ -44,12 +50,69 @@ header section {
 
 } 
 
-main section:nth-of-type(1) h1{
+
+
+h3{
+    background-color: var(--darkblue);
+    color: var(--white);
+    width: 100% ;
+    padding: .2em;
+}
+
+h4{
+    background-color: var(--yellow);
+    box-shadow: 1px 1px 1px var(--darkblue);
+}
+
+main section:nth-of-type(1) h2{
     background-color: var(--darkblue);
     color: var(--white);
     padding: .5em;
 }
 
-main section:nth-of-type(1) ol li{
+main section:nth-of-type(2) ol li{
     display: flex;
+    flex-direction: column;
+    padding: .5em;
+    margin: 1em;
 }
+
+
+#intro{
+    padding: .5em;
+    margin-left: 1em;
+}
+
+input{
+    margin: .5em;
+}
+
+input[type="text"]{
+   /* width: 100%; */
+   color: blue;
+}
+
+input[type="text"]:focus{
+    border: 3px solid #555;
+}
+
+input::placeholder {
+    /* color: ; */
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+   
+}
+/* 
+section ol li:nth-of-type(6) input:checked{
+    .skip1 {
+        display: block;
+
+    }
+} */
+
+
+
+

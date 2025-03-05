@@ -13,7 +13,10 @@
 
     <header>
         <img src="images/Nederlandse_spoorwegen_logo.svg.png" alt="logo ns">
+     
+     
      <section>
+
         <h1>Belasting aangifte 2025</h1>
         <p>Erfbelasting</p>
      </section>
@@ -21,25 +24,168 @@
 
     <main>
         
-       <section>
-           <h1>1 Gegevens van de overledene</h1>
-      
+       
+        <section id="titel">
+        <!-- <h2 >1</h2> -->
+        <h2 >1 Gegevens van de overledene</h2>
+         </section>
 
-       <p>Vul hier de gegevens in van de overledene.</p>
+
+
+    <section>
+         
+
+     <p id="intro">Vul hier de gegevens in van de overledene.</p>
+     
        <ol>
+        <h4>
+            1a
+        </h4>
            <li>
-            Voorletter(s), tussen- voegsel(s) en achternaam
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            Burgerservice overledene 
-            <input type="date">
-          </li>
           
+               <label for="naam overledene">
+               <p>
+                 Voorletter(s), tussen- voegsel(s) en achternaam
+               </p> 
+              
+            <!-- Voorletter(s), tussen- voegsel(s) en achternaam -->
+            <input type="text" placeholder="Voorletter(s)">
+            <input type="text" placeholder="tussenvoegsel(s)">
+            <input type="text" placeholder="achtermaam">
+        </label>
+
+        <label for="burgerservice">
+            Burgerservice overledene 
+            <input type="number" placeholder="123456789">
+        </label>
+       
+       <label for="Overlijdensdatum">
+            Overlijdensdatum
+            <input type="date">
+        </label> 
+         </li>
+
+     <li>
+         <p>
+             Was de overledene getrouwd of had de overledene een geregistreerd partnerschap op het moment van overlijden? 
+         </p>
+             
+             <label > 
+             <input type="radio" name="huwelijk" id="skip"> Nee, ga verder met vraag 1c
+            </label>
+            <label > 
+             <input type="radio"  name="huwelijk"> Ja
+            </label>
+            
+      </li>
+      
+            <h4>
+                1b
+            </h4>
+    
+     <li>
+       
+         <p>
+            Hadden de overledene en diens echtgenoot of geregistreerd partner huwelijkse of partnerschaps voorwaarden laten vastleggen in een notariële akte? 
+        </p>
+      
+            <label> 
+                  <input type="radio" name="akte" > Nee
+              </label>
+
+              <label>
+                  <input type="radio" name="akte" > Ja. Stuur een kopie van de akte mee met de aangifte.
+              </label>
+       
+    </li>
+
+     
+    <li>
+        <p>
+        Hadden de overledene en diens partner een finaal verrekenbeding?
+    </p>
+
+        <label>
+            <input type="radio" name="finaal"> Nee
+              
+          </label>
+
+          <label>
+            <input type="radio" name="finaal">Ja
+        </label>
+
+        <label >Datum huwelijkse of partnerschapsvoorwaarden
+            <input type="date">
+        </label>
+    </li>
 
 
+    <h4>
+        1c
+    </h4>
+    <li >
+            <p>
+                Had de overledene kinderen?
+            </p>
+        <label> 
+            <input type="radio" name="kinderen"  > Ja
+        </label>
+        <label > 
+            <input type="radio" name="kinderen" > Nee, ga verder met vraag 1d
+        </label>
+    </li>
+
+    <li >
+        <p>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</p>
+        <label>
+            <input type="radio" name="kind"> Ja
+    
+        </label>
+        <label >
+            <input type="radio" name="kind"> Nee, ga verder met vraag 1d
+        </label>
+    </li>
+
+
+    <li id="extraveld">
+        <p>
+            Had dit overleden kind zelf kinderen?
+        </p>
+        <label >
+            <input type="radio" name="overledenkind">Nee
+        </label>
+        <label >
+            <input type="radio" name="overledenkind">Ja
+        </label>
+    </li>
+
+
+    <h4>
+        1d
+    </h4>
+    <li>
+        <p>
+            Had de overledene een testament?
+        </p>
+        <label >
+            <input type="radio" name="testament">Nee. Ga verder met vraag 2
+        </label>
+        <label > 
+            <input type="radio" name="testament">Ja. Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het testament.
+        </label>
+    </li>
+
+    <li>
+        <label for=""> 
+            <input type="text">
+        </label>
+    </li>
+
+    </form>
+
+         
        </ol>
-    </section>
+ </section>
 
     </main>
 </body>
