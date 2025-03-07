@@ -16,3 +16,13 @@ Voortgang week 1:
 - gegevens opgeslagen houden, hoe werkt dit 
 - interactieve elementen, als je ja of nee zegt gebeurd er misschien iets met andere vragen
 - kijk naar verschillende patterns die interessant zijn om toe te voegen 
+
+
+Week 2:
+Een aantal nieuwe dingen geprobeerd en uitgevoerd, formulieren opgezet en mijn  eerste sectie afgekregen. Een aantal verschillende elementen die hierin zitten. 
+
+- sectie opgezet voor het formulier 
+- eerste belangrijke vraag uitgewerkt 
+- afhankelijk van het antwoord van een vraag komen er andere vragen op 
+
+Volgende week ontwerpen dat er invulvelden kunnen opkomen voor verschillende personen. 

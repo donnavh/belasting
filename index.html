@@ -15,11 +15,11 @@
         <img src="images/Nederlandse_spoorwegen_logo.svg.png" alt="logo ns">
      
      
-     <section>
+  <section>
 
         <h1>Belasting aangifte 2025</h1>
         <p>Erfbelasting</p>
-     </section>
+  </section>
     </header>
 
     <main>
@@ -41,14 +41,14 @@
         <h4>
             1a
         </h4>
-           <li>
-          
+           <li> 
+          <!-- li 1 -->
                <label for="naam overledene">
                <p>
                  Voorletter(s), tussen- voegsel(s) en achternaam
                </p> 
               
-            <!-- Voorletter(s), tussen- voegsel(s) en achternaam -->
+       
             <input type="text" placeholder="Voorletter(s)">
             <input type="text" placeholder="tussenvoegsel(s)">
             <input type="text" placeholder="achtermaam">
@@ -66,15 +66,16 @@
          </li>
 
      <li>
+         <!-- li 3 -->
          <p>
              Was de overledene getrouwd of had de overledene een geregistreerd partnerschap op het moment van overlijden? 
          </p>
              
              <label > 
-             <input type="radio" name="huwelijk" id="skip"> Nee, ga verder met vraag 1c
+             <input type="radio" name="huwelijk" value="no"> Nee, ga verder met vraag 1c
             </label>
             <label > 
-             <input type="radio"  name="huwelijk"> Ja
+             <input type="radio"  name="huwelijk" value="yes"> Ja
             </label>
             
       </li>
@@ -83,35 +84,36 @@
                 1b
             </h4>
     
-     <li>
-       
+     <li id="akte" >
+       <!-- li 3 -->
          <p>
             Hadden de overledene en diens echtgenoot of geregistreerd partner huwelijkse of partnerschaps voorwaarden laten vastleggen in een notariële akte? 
         </p>
       
             <label> 
-                  <input type="radio" name="akte" > Nee
+                  <input type="radio" name="akte" value="no" > Nee
               </label>
 
               <label>
-                  <input type="radio" name="akte" > Ja. Stuur een kopie van de akte mee met de aangifte.
+                  <input type="radio" name="akte" value="yes"> Ja. Stuur een kopie van de akte mee met de aangifte.
               </label>
        
     </li>
 
      
-    <li>
+    <li id="beding" >
+        <!-- li 4 -->
         <p>
         Hadden de overledene en diens partner een finaal verrekenbeding?
     </p>
 
         <label>
-            <input type="radio" name="finaal"> Nee
+            <input type="radio" name="finaal" value="no"> Nee
               
           </label>
 
           <label>
-            <input type="radio" name="finaal">Ja
+            <input type="radio" name="finaal" value="no">Ja
         </label>
 
         <label >Datum huwelijkse of partnerschapsvoorwaarden
@@ -123,31 +125,34 @@
     <h4>
         1c
     </h4>
-    <li >
+    <li id="b">
+        <!-- li 5 -->
             <p>
                 Had de overledene kinderen?
             </p>
         <label> 
-            <input type="radio" name="kinderen"  > Ja
+            <input type="radio" name="kinderen" value="yes" > Ja
         </label>
         <label > 
-            <input type="radio" name="kinderen" > Nee, ga verder met vraag 1d
+            <input type="radio" name="kinderen" value="no"> Nee, ga verder met vraag 1d
         </label>
     </li>
 
-    <li >
+    <li id="c" >
+        <!-- li 6 -->
         <p>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</p>
         <label>
-            <input type="radio" name="kind"> Ja
+            <input type="radio" name="kind" value="yes"> Ja
     
         </label>
         <label >
-            <input type="radio" name="kind"> Nee, ga verder met vraag 1d
+            <input type="radio" name="kind" value="no"> Nee, ga verder met vraag 1d
         </label>
     </li>
 
 
-    <li id="extraveld">
+    <li id="kinderen">
+        <!-- li 7 -->
         <p>
             Had dit overleden kind zelf kinderen?
         </p>
@@ -164,27 +169,136 @@
         1d
     </h4>
     <li>
+        <!-- li 8 -->
         <p>
             Had de overledene een testament?
         </p>
         <label >
-            <input type="radio" name="testament">Nee. Ga verder met vraag 2
+            <input type="radio" name="testament" value="no">Nee. Ga verder met vraag 2
         </label>
         <label > 
-            <input type="radio" name="testament">Ja. Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het testament.
+            <input type="radio" name="testament" value="yes">Ja. Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het testament.
         </label>
     </li>
 
     <li>
-        <label for=""> 
+        <!-- li 9 -->
+        <label> Protocolnummer notaris
             <input type="text">
         </label>
-    </li>
+        <label > Voorletter(s), tussenvoegel(s) en achternaam
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </label>
 
-    </form>
+        <label > Vestiginsplaats
+            <input type="text">
+        </label>
 
-         
+        <label >
+            Datum van het testament of van de laatste wijziging 
+            <input type="date">
+        </label>
+     </li>
+
        </ol>
+
+ </section>
+
+ <section>
+    <!-- Vraag 3  -->
+
+    <h2>3 Voor wie doet u de aangifte?</h2>
+    <ul>
+       
+        <h4>
+            3a 
+        </h4>
+        <p>
+            Heeft de overledene in het testament een executeur 
+            aangewezen om de erfenis af te handelen? Dan moet de 
+            executeur aangifte doen voor alle personen en/of 
+            instellingen die iets krijgen uit de nalatenschap (verkrijgers). 
+
+        </p>
+
+
+        <li>
+            
+            <label >
+                <input type="checkbox"> Ik ben executeur en doe aangifte voor alle personen en/of instellingen die
+                iets krijgen uit de nalatenschap (verkrijgers). Geef aan voor hoeveel verkrijgers u
+                aangifte doet. Bent u zelf ook verkrijger? Tel uzelf dan ook mee.
+            </label>
+
+            <label id="executeur">
+                <input type="number">
+            </label>
+
+            <p>
+                Is er geen executeur aangewezen? Kruis dan aan welke situatie voor u geldt.
+            </p>
+
+            <label >
+                <input type="checkbox"> Ik ben erfgenaam en ben gemachtigd om aangifte te doen voor meerdere
+                personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers).
+                Geef aan voor hoeveel verkrijgers u aangifte doet. Tel uzelf ook mee.
+                <input type="number">
+            </label>
+            <label for="">
+                <input type="checkbox"> Ik ben erfgenaam en doe samen met andere erfgenamen aangifte.
+                Geef het aantal personen en/of instellingen aan die iets krijgen uit de nalatenschap
+                (verkrijgers). Tel uzelf ook mee.
+                <input type="number">
+            </label>
+            <label >
+                <input type="checkbox"> Ik ben erfgenaam en doe alleen aangifte voor mijzelf
+            </label>
+            <label for="">
+                <input type="checkbox"> Ik ben geen erfgenaam, maar ben gemachtigd om aangifte te doen.
+                Geef aan voor hoeveel verkrijgers u aangifte doet.
+                <input type="number">
+            </label>
+        </li>
+
+        <h4>
+            3b
+        </h4>
+
+        <li>
+            <p>Zijn er verkrijgers voor wie u <b>geen</b> aangifte doet?</p>
+            <label >
+                <input type="radio" value="no">Nee. Ga naar vraag 3c.
+            </label>
+            <label for="">
+                <input type="radio" value="yes">
+                 Ja. Vul hieronder de gegevens in van de verkrijgers 
+                 waarvoor u geen aangifte doet. Gaat het om een instelling? 
+                 Vul dan de naam van de instellin in bij 'achternaam'. Het 
+                 invullen van een bsn is niet verplicht, maar wel handig voor ons. 
+            </label>
+        </li>
+
+
+        <li>
+            <h5>Verkijger 1</h5>
+            <label for=""> Burgerservicenummer
+                <input type="number">
+            </label>
+            <label > Voorletter(s), tussenvoegel(s) en achternaam
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </label>
+            <label for=""> Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?
+                <input type="radio" value="no"> Nee
+                <input type="radio" value="yes"> Ja
+            </label>
+
+        </li>
+
+    </ul>
  </section>
 
     </main>
