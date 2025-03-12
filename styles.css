@@ -25,6 +25,8 @@ body{
 
 main{
     background-color: var(--yellow);
+    padding: .5em;
+    
 }
 
 header{
@@ -50,7 +52,24 @@ header section {
 
 } 
 
+details{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .5em;
+    /* display: flex; */
+}
 
+details > summary{
+    background-color: var(--darkblue);
+    color: var(--white);
+ 
+    padding: .5em;
+    /* content: "+"; */
+    cursor: pointer;
+}
+
+details:open summary{
+    content: "-"
+}
 
 h3{
     background-color: var(--darkblue);
@@ -99,6 +118,23 @@ input{
     margin: .5em;
 }
 
+main section:nth-of-type(2) ol li:nth-of-type(1) input:user-invalid{
+    border: 3px solid red;
+    content: "✖";
+    color: red;
+}
+/* input:user-invalid{
+    border: 3px solid red;
+    content: "✖";
+    color: red;
+} */
+
+/* input:user-invalid::before {
+    content: "✖";
+    color: red;
+  } */
+  
+
 input[type="text"]{
    /* width: 100%; */
    color: blue;
@@ -127,6 +163,7 @@ input[type="text"]:focus{
 
 #kinderen{
     display: none;
+    
 }
 
 
@@ -134,6 +171,8 @@ ol:has(li:nth-of-type(2) input[value="yes"]:checked) #akte {
         display: flex;
 }
 
+/* draai de has om, zorg ervoor dat alles displayed is tenzij het niet nodig is, 
+verstop deze elementen dan  */
 
 ol:has(li:nth-of-type(2) input[value="yes"]:checked) #beding {
     display: flex;
@@ -154,11 +193,11 @@ li:nth-of-type(9) input{
 }
 
 
-#executeur{
+#extra1{
     display: none;
 }
 
-ul:has(li:nth-of-type(1) input:checked) #executeur{
+ul:has(li:nth-of-type(1) input:checked) #extra1{
     display: flex;
 }
 
@@ -186,4 +225,11 @@ ul li{
     list-style-type: none;
 }
 
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid var(--darkblue);
+}
 
