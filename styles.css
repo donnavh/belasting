@@ -25,16 +25,13 @@ body{
 
 main{
     background-color: var(--yellow);
-    padding: .5em;
-    
+    padding: .5em; 
 }
 
 header{
     display: flex;
     padding: 1em;
     background-color: var(--white);
-
-    /* color: var(--darkblue); */
 }
 
 header section {
@@ -46,16 +43,11 @@ header section {
      margin: 2em;
      max-width: 10em;
      max-height: 10em;
-    /* width: 15vw;
-    max-width: 15vw;
-    height: 5vh; */
-
 } 
 
 details{
     font-family: Arial, Helvetica, sans-serif;
     padding: .5em;
-    /* display: flex; */
 }
 
 details > summary{
@@ -63,13 +55,9 @@ details > summary{
     color: var(--white);
  
     padding: .5em;
-    /* content: "+"; */
     cursor: pointer;
 }
 
-details:open summary{
-    content: "-"
-}
 
 h3{
     background-color: var(--darkblue);
@@ -99,7 +87,6 @@ main section:nth-of-type(2) ol li{
 main ul{
     display: flex;
     flex-direction: column;
-    /* padding: .5e; */
 }
 
 main ul li{
@@ -118,21 +105,14 @@ input{
     margin: .5em;
 }
 
-main section:nth-of-type(2) ol li:nth-of-type(1) input:user-invalid{
-    border: 3px solid red;
-    content: "✖";
-    color: red;
+input:user-invalid{
+    border: 2px solid red;
 }
-/* input:user-invalid{
-    border: 3px solid red;
-    content: "✖";
-    color: red;
-} */
 
-/* input:user-invalid::before {
-    content: "✖";
-    color: red;
-  } */
+input:user-valid{
+    border: 2px solid green;
+}
+
   
 
 input[type="text"]{
@@ -149,53 +129,64 @@ input[type="text"]:focus{
 
 
 
-#c{
-    display: none;
+#c, 
+#akte,
+#beding,
+#kinderen{
+    display: flex;
 }
 
-#akte{
-    display: none;
+/* #akte{
+    display: flex;
 }
 
 #beding{
-    display: none;
+    display: flex;
 }
 
 #kinderen{
-    display: none;
+    display: flex;
     
+} */
+
+ol:has(#getrouwd input[value="no"]:checked) #akte  {
+    display: none;
 }
 
 
-ol:has(li:nth-of-type(2) input[value="yes"]:checked) #akte {
-        display: flex;
-}
+/* section:nth-of-type(2) ol li:nth-of-type(2):has(([value="no"]):checked) #akte{
+    display: none;
+} */
+
+
+/* ol:has(li:nth-of-type(2) input[value="no"]:checked) #akte {
+        display: none;
+} */
 
 /* draai de has om, zorg ervoor dat alles displayed is tenzij het niet nodig is, 
 verstop deze elementen dan  */
 
-ol:has(li:nth-of-type(2) input[value="yes"]:checked) #beding {
-    display: flex;
+/* ol:has(li:nth-of-type(2) input[value="no"]:checked) #beding {
+    display: none;
 
-}
+} */
 
-ol:has(li:nth-of-type(5) input[value="yes"]:checked) #c{
-    
-    display: flex; 
-}
+/* ol:has(li:nth-of-type(5) input[value="no"]:checked) #c{
+    display: none; 
+} */
 
-ol:has(li:nth-of-type(5) input[value="yes"]:checked) #kinderen {
-    display: flex;
-}
+/* ol:has(li:nth-of-type(5) input[value="no"]:checked) #kinderen {
+    display: none;
+} */
 
 li:nth-of-type(9) input{
     border: dotted;
 }
 
 
-#extra1{
+/* #extra1{
     display: none;
-}
+} */
 
 ul:has(li:nth-of-type(1) input:checked) #extra1{
     display: flex;
