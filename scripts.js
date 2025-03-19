@@ -25,5 +25,4 @@ document.addEventListener('DOMContentLoaded', () => {
 // gebruik addEventListener om een event listener toe te voegen aan de input velden
 // gebruik localStorage.setItem om de data op te slaan in de local storage
 // gebruik localStorage.getItem om de data op te halen uit de local storage
-//Opgezet met behulp van Copilot
 

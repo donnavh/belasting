@@ -1,34 +1,35 @@
-:root{
+:root {
     --darkblue: #003082;
     --yellow: #FFC917;
-    --white: #FFFFFF; 
+    --white: #FFFFFF;
     --red: #DB0029;
     --blue: #0063D3;
     --lightgrey: #E6E6E8;
-    --background-color:#CDCDD3;
+    --background-color: #CDCDD3;
     --mediumgrey: #B4B4BC;
-    --grey: #9C9CA6; 
+    --grey: #9C9CA6;
     --darkgrey: #6A6A7A;
     --black: #070721;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     padding: 0;
     margin: 0;
-    background-color:rgb(230, 230, 233) ;
+    background-color: rgb(230, 230, 233);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
-main{
+main {
     background-color: var(--yellow);
-    padding: .5em; 
+    padding: 0;
+    margin: 0;
 }
 
-header{
+header {
     display: flex;
     padding: 1em;
     background-color: var(--white);
@@ -38,123 +39,143 @@ header section {
     color: var(--darkblue);
 }
 
- header img{
-     margin-top: 2em;
-     margin: 2em;
-     max-width: 10em;
-     max-height: 10em;
-} 
+header img {
+    margin-top: 2em;
+    margin: 2em;
+    width: 5em;
+    height: 3em;
+    max-width: 100%;
 
-details{
+}
+
+details {
     font-family: Arial, Helvetica, sans-serif;
     padding: .5em;
 }
 
-details > summary{
+details>summary {
     background-color: var(--darkblue);
     color: var(--white);
- 
+
     padding: .5em;
     cursor: pointer;
 }
 
+section:nth-of-type(1) p:nth-of-type(2) {
+    color: var(--red);
+}
 
-h3{
+h1 {
+    font-size: 1.5em;
+}
+
+
+h3 {
     background-color: var(--darkblue);
     color: var(--white);
-    width: 100% ;
+    width: 100%;
     padding: .2em;
 }
 
-h4{
+h4 {
     background-color: var(--yellow);
     box-shadow: 1px 1px 1px var(--darkblue);
 }
 
-main section:nth-of-type(1) h2{
+main section:nth-of-type(1) h2 {
     background-color: var(--darkblue);
     color: var(--white);
     padding: .5em;
 }
 
-main section:nth-of-type(2) ol li{
+main section:nth-of-type(2) ol li {
     display: flex;
     flex-direction: column;
     padding: .5em;
     margin: 1em;
 }
 
-main ul{
+main ul {
     display: flex;
     flex-direction: column;
 }
 
-main ul li{
+main ul li {
     display: flex;
     flex-direction: column;
     padding: 1em;
-    margin: .5em ;
+    margin: .5em;
 }
 
-#intro{
+#intro {
     padding: .5em;
     margin-left: 1em;
 }
 
-input{
+input {
     margin: .5em;
 }
 
-input:user-invalid{
+input:user-invalid {
     border: 2px solid red;
+
 }
 
-input:user-valid{
+input:user-invalid::before {
+    content: "+";
+    color: red;
+}
+
+input:user-valid {
     border: 2px solid green;
 }
 
-  
-
-input[type="text"]{
-   /* width: 100%; */
-   color: blue;
+input:focus {
+    background-color: var(--grey);
 }
 
-input[type="text"]:focus{
+
+input[type="text"] {
+    /* width: 100%; */
+    color: blue;
+}
+
+input[type="text"]:focus {
     border: 3px solid #555;
 }
 
 
 
 
-
-
-#c, 
+#c,
 #akte,
 #beding,
-#kinderen{
+#kinderen {
     display: flex;
 }
 
-/* #akte{
-    display: flex;
-}
 
-#beding{
-    display: flex;
-}
-
-#kinderen{
-    display: flex;
-    
-} */
 /* ol:has(#getrouwd input[value="yes"]:checked) #akte  {
     display: flex;
 } */
 
-ol:has(#getrouwd input[value="no"]:checked) #akte  {
+ol:has(#getrouwd input[value="no"]:checked) #akte {
+    display: none;
+
+}
+
+ol:has(#getrouwd input[value="no"]:checked) #beding {
     display: none;
 }
+
+ol:has(#b input[value="no"]:checked) #c {
+    display: none;
+}
+
+ol:has(#b input[value="no"]:checked) #kinderen {
+    display: none;
+}
+
 
 
 
@@ -162,73 +183,35 @@ ol:has(#getrouwd input[value="no"]:checked) #beding {
     display: none;
 }
 
-/* section:nth-of-type(2) ol li:nth-of-type(2):has(([value="no"]):checked) #akte{
+ol:has(#testament input[value="no"]:checked) #notaris {
     display: none;
-} */
+}
 
-
-/* ol:has(li:nth-of-type(2) input[value="no"]:checked) #akte {
-        display: none;
-} */
 
 /* draai de has om, zorg ervoor dat alles displayed is tenzij het niet nodig is, 
 verstop deze elementen dan  */
 
-/* ol:has(li:nth-of-type(2) input[value="no"]:checked) #beding {
-    display: none;
 
-} */
-
-/* ol:has(li:nth-of-type(5) input[value="no"]:checked) #c{
-    display: none; 
-} */
-
-/* ol:has(li:nth-of-type(5) input[value="no"]:checked) #kinderen {
-    display: none;
-} */
-
-li:nth-of-type(9) input{
-    border: dotted;
+li:nth-of-type(9) input {
+    border: 1px solid #555;
 }
 
 
-/* #extra1{
-    display: none;
-} */
-
-ul:has(li:nth-of-type(1) input:checked) #extra1{
-    display: flex;
-}
-
-/* 
-input#yes:checked {
-    
-} */
-
-/* 
-section ol li:nth-of-type(6) input:checked{
-    .skip1 {
-        display: block;
-
-    }
-} */
-
-main section:nth-of-type(3) h2{
+main section:nth-of-type(3) h2 {
 
     background-color: var(--darkblue);
     color: var(--white);
     padding: .5em;
 }
 
-ul li{
+ul li {
     list-style-type: none;
 }
 
 
-fieldset{
+fieldset {
     display: flex;
     flex-direction: column;
 
     border: 2px solid var(--darkblue);
 }
-

@@ -26,3 +26,6 @@ Een aantal nieuwe dingen geprobeerd en uitgevoerd, formulieren opgezet en mijn  
 - afhankelijk van het antwoord van een vraag komen er andere vragen op 
 
 Volgende week ontwerpen dat er invulvelden kunnen opkomen voor verschillende personen. 
+
+Week 3: 
+Hier heb ik veel tijd besteed aa het opzetten van formulieren die gaan opkomen wanneer een input op ja of nee komt, hier heb ik tijd aan besteed om dit te laten werken. Tot ik later tot de realisatie kwam dat dit op elk mogelijk device zou moeten werken. En ik kan mij voorstellen dat :has() niet op elk device werkt. Dus ben ik deze waarden gaan omdraaien om het makkelijker te maken voor de gebruiker en  dat zij niet velden die ze misschien wel nodig hebben dus toch missen. Daarom heb ik het omgedraaid en ervoor gezorgd dat de velden  altijd beschikbaar zijn en verstopt worden als deze niet relevant zijn voor de gebruiker. Vervolgens heb ik een aantal verschillende soorten vragen erin geprobeerd te zetten zodat ik verschillende soorten forms oefen en uitwerk. 
