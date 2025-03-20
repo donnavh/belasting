@@ -29,3 +29,12 @@ Volgende week ontwerpen dat er invulvelden kunnen opkomen voor verschillende per
 
 
 Hier heb ik veel tijd besteed aa het opzetten van formulieren die gaan opkomen wanneer een input op ja of nee komt, hier heb ik tijd aan besteed om dit te laten werken. Tot ik later tot de realisatie kwam dat dit op elk mogelijk device zou moeten werken. En ik kan mij voorstellen dat :has() niet op elk device werkt. Dus ben ik deze waarden gaan omdraaien om het makkelijker te maken voor de gebruiker en  dat zij niet velden die ze misschien wel nodig hebben dus toch missen. Daarom heb ik het omgedraaid en ervoor gezorgd dat de velden  altijd beschikbaar zijn en verstopt worden als deze niet relevant zijn voor de gebruiker. Vervolgens heb ik een aantal verschillende soorten vragen erin geprobeerd te zetten zodat ik verschillende soorten forms oefen en uitwerk. 
+
+
+Afronding:
+in de afrondings fase heb  ik gekeken naar het zeker weten dat de elementen die nu op de pagina staan het goed doen en niet meer toe te voegen. 
+- alle elementen staan op de pagina en wanneer de gebruiker een bepaalde keuze maakt zullen de niet relevante elementen voor hun ingeklapt worden
+- wanneer de pagina herladen wordt onthoud hij de antwoorden die gegeven zijn 
+- ik heb verschillende soorten vragen geprobeerd in te brengen zodat in oefen met verschillende soorten inputs 
+- validation is toegevoegd maar alleen wanneer de gebruiker al interactie heeft gehad met een bepaald formulier 
+- de verkijgers toevoegen is mij niet meer gelukt maar het is wel gelukt dat als er geen verkrijgers zijn die het niet invullen dat deze velden ook niet getoond worden.

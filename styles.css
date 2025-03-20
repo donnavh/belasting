@@ -117,6 +117,7 @@ main ul li {
 
 input {
     margin: .5em;
+    border-radius: 5%;
 }
 
 input:user-invalid {
@@ -133,12 +134,12 @@ input:user-valid {
     border: 2px solid var(--green);
 }
 
-input:invalid:required{
+input:user-invalid:required{
     background-color: pink;
     /* content: "+"; */
 }
 
-input:valid:required{
+input:user-valid:required{
     background-color: var(--green) ;
     
 }
@@ -154,7 +155,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    border: 3px solid #555;
+    border: 3px solid var(--darkgrey);
 }
 
 
@@ -171,7 +172,6 @@ input[type="text"]:focus {
 
 ol:has(#getrouwd input[value="no"]:checked) #akte {
     display: none;
-
 }
 
 ol:has(#getrouwd input[value="no"]:checked) #beding {
