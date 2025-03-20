@@ -158,12 +158,12 @@
 
                     <label for="burgerservice">
                         Burgerservice overledene
-                        <input type="number" placeholder="123456789" id="Burgerservicenummer" required>
+                        <input type="number" placeholder="123456789" id="Burgerservicenummer" max="9"  required>
                     </label>
 
                     <label for="Overlijdensdatum">
                         Overlijdensdatum
-                        <input type="date" id="overlijdensdatum" required>
+                        <input type="date" id="overlijdensdatum" max="20-03-2025" required>
                     </label>
                 </li>
 
@@ -293,7 +293,7 @@
                         <input type="text" id="protocolnummer_notaris">
                     </label>
                     <label> Voorletter(s)
-                        <input type="text" id="voorletters_notaris">
+                        <input type="text" id="voorletters_notaris" >
                     </label>
                     <label> tussenvoegel(s)
                         <input type="text" id="tussenvoegsels_notaris">
@@ -353,27 +353,27 @@
                     </p>
 
                     <label>
-                        <input type="radio" name="executeur"> Ik ben erfgenaam en ben gemachtigd om aangifte te doen
+                        <input type="radio" name="executeur" id="executeur1"> Ik ben erfgenaam en ben gemachtigd om aangifte te doen
                         voor meerdere
                         personen en/of instellingen die iets krijgen uit de nalatenschap (verkrijgers).
                         Geef aan voor hoeveel verkrijgers u aangifte doet. Tel uzelf ook mee.
                         <input type="number">
                     </label>
                     <label for="">
-                        <input type="radio" name="executeur"> Ik ben erfgenaam en doe samen met andere erfgenamen
+                        <input type="radio" name="executeur" id="executeur2"> Ik ben erfgenaam en doe samen met andere erfgenamen
                         aangifte.
                         Geef het aantal personen en/of instellingen aan die iets krijgen uit de nalatenschap
                         (verkrijgers). Tel uzelf ook mee.
                         <input type="number">
                     </label>
                     <label>
-                        <input type="radio" name="executeur"> Ik ben erfgenaam en doe alleen aangifte voor mijzelf
+                        <input type="radio" name="executeur" id="executeur3"> Ik ben erfgenaam en doe alleen aangifte voor mijzelf
                     </label>
                     <label for="">
-                        <input type="radio" name="executeur"> Ik ben geen erfgenaam, maar ben gemachtigd om aangifte te
+                        <input type="radio" name="executeur" id="executeur4">  Ik ben geen erfgenaam, maar ben gemachtigd om aangifte te
                         doen.
                         Geef aan voor hoeveel verkrijgers u aangifte doet.
-                        <input type="number">
+                        <input type="number" id="executeur5">
                     </label>
                 </li>
 
@@ -381,13 +381,13 @@
                     3b
                 </h4>
 
-                <li>
+                <li id="geen">
                     <p>Zijn er verkrijgers voor wie u <b>geen</b> aangifte doet?</p>
                     <label>
-                        <input type="radio" value="no">Nee. Ga naar vraag 3c.
+                        <input type="radio" name="verkrijger" id="niemand" value="no" max="9">Nee. Ga naar vraag 3c.
                     </label>
-                    <label for="">
-                        <input type="radio" value="yes">
+                    <label >
+                        <input type="radio" name="verkrijger" id="weliemand" value="yes">
                         Ja. Vul hieronder de gegevens in van de verkrijgers
                         waarvoor u geen aangifte doet. Gaat het om een instelling?
                         Vul dan de naam van de instellin in bij 'achternaam'. Het
@@ -400,31 +400,50 @@
                     <!-- <h5>Verkijger 1</h5> -->
 
 
-                    <fieldset>
+                    <fieldset id="verkrijger_een" >
                         <legend>Verkrijger 1</legend>
                         <label for=""> Burgerservicenummer
-                            <input type="number">
+                            <input type="number" id="bsn_verkrijger1">
                         </label>
 
-                        <label for=""> Voorletter(s)
-                            <input type="text">
+                        <label > Voorletter(s)
+                            <input type="text" id="voorletter_verkrijger1">
                         </label>
-                        <label for=""> tussenvoegsel(s)
-                            <input type="text">
+                        <label > tussenvoegsel(s)
+                            <input type="text" id="tussenvoegsel_verkrijger1">
                         </label>
-                        <label for=""> achternaam
-                            <input type="text">
+                        <label > achternaam
+                            <input type="text" id="achternaam_verkrijger1">
                         </label>
-                        <!-- <label > Voorletter(s), tussenvoegel(s) en achternaam
-                <input type="text">
-                <input type="text">
-                <input type="text">
-            </label> -->
-                        <label for=""> Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?
-                            <input type="radio" value="no"> Nee
-                            <input type="radio" value="yes"> Ja
+    
+                        <label > Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?
+                            <input type="radio" id="geen_verkrijger" name="verkrijger1" value="no"> Nee
+                            <input type="radio" id="wel_verkrijgers" name="verkrijger1" value="yes"> Ja
                         </label>
                     </fieldset>
+
+
+                    <!-- <fieldset id="verkrijger_twee" >
+                        <legend>Verkrijger 2</legend>
+                        <label for=""> Burgerservicenummer
+                            <input type="number" id="bsn_verkrijger1">
+                        </label>
+
+                        <label > Voorletter(s)
+                            <input type="text" id="voorletter_verkrijger1">
+                        </label>
+                        <label > tussenvoegsel(s)
+                            <input type="text" id="tussenvoegsel_verkrijger1">
+                        </label>
+                        <label > achternaam
+                            <input type="text" id="achternaam_verkrijger1">
+                        </label>
+    
+                        <label > Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?
+                            <input type="radio" id="geen_verkrijger" name="verkrijger1" value="no"> Nee
+                            <input type="radio" id="wel_verkrijgers" name="verkrijger1" value="yes"> Ja
+                        </label>
+                    </fieldset> -->
 
 
                 </li>

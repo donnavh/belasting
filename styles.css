@@ -10,6 +10,8 @@
     --grey: #9C9CA6;
     --darkgrey: #6A6A7A;
     --black: #070721;
+    --green: #009A42
+
 }
 
 body {
@@ -31,6 +33,7 @@ main {
 
 header {
     display: flex;
+    /* flex-direction: row-reverse; */
     padding: 1em;
     background-color: var(--white);
 }
@@ -121,13 +124,23 @@ input:user-invalid {
 
 }
 
-input:user-invalid::before {
+/* input:user-invalid::before {
     content: "+";
     color: red;
-}
+} */
 
 input:user-valid {
-    border: 2px solid green;
+    border: 2px solid var(--green);
+}
+
+input:invalid:required{
+    background-color: pink;
+    /* content: "+"; */
+}
+
+input:valid:required{
+    background-color: var(--green) ;
+    
 }
 
 input:focus {
@@ -155,9 +168,6 @@ input[type="text"]:focus {
 }
 
 
-/* ol:has(#getrouwd input[value="yes"]:checked) #akte  {
-    display: flex;
-} */
 
 ol:has(#getrouwd input[value="no"]:checked) #akte {
     display: none;
@@ -179,6 +189,7 @@ ol:has(#b input[value="no"]:checked) #kinderen {
 
 
 
+
 ol:has(#getrouwd input[value="no"]:checked) #beding {
     display: none;
 }
@@ -187,6 +198,14 @@ ol:has(#testament input[value="no"]:checked) #notaris {
     display: none;
 }
 
+/* ol:has(#geen input[value="no"]:checked #verkrijger_een){
+    display: none;
+} */
+
+
+main ul:has(#geen input[value="no"]:checked) #verkrijger_een{
+    display: none;
+}
 
 /* draai de has om, zorg ervoor dat alles displayed is tenzij het niet nodig is, 
 verstop deze elementen dan  */
