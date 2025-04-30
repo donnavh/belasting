@@ -20,22 +20,16 @@ body {
     max-width: 100%;
     padding: 0;
     margin: 0;
-    background-color: rgb(230, 230, 233);
+    background-color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
-main {
-    background-color: var(--yellow);
-    padding: 0;
-    margin: 0;
-}
-
 header {
     display: flex;
-    /* flex-direction: row-reverse; */
     padding: 1em;
     background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header section {
@@ -43,194 +37,253 @@ header section {
 }
 
 header img {
-    margin-top: 2em;
+    /* margin-top: 2em; */
     margin: 2em;
     width: 5em;
     height: 3em;
     max-width: 100%;
+}
 
+main {
+    background-color: var(--white);
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100vw;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-accordion{
+    background-color: var(--lightgrey);
+    margin-bottom: 20px;
 }
 
 details {
     font-family: Arial, Helvetica, sans-serif;
-    padding: .5em;
+    /* padding: .5em; */
+    border-bottom: 1px solid var(--lightgrey);
 }
 
 details>summary {
     background-color: var(--darkblue);
     color: var(--white);
 
-    padding: .5em;
+    padding: 1em;
     cursor: pointer;
+    font-weight: bold;
+    /* transition: background-color 0.3s; */
 }
 
-section:nth-of-type(1) p:nth-of-type(2) {
-    color: var(--red);
+details>summary:hover{
+    background-color: var(--blue);
 }
 
-h1 {
-    font-size: 1.5em;
+details>div{
+    padding: 1em;
+    background-color: var(--white);
 }
 
+section.form-section{
+    margin-bottom: 2em;
+}
 
-h3 {
+.section-header{
     background-color: var(--darkblue);
     color: var(--white);
-    width: 100%;
-    padding: .2em;
+    padding: 0.8em;
+    margin: 0;
+    font-size: 1.2em;
 }
 
-h4 {
+.section-intro {
+    padding: 1em;
+    margin: 0;
+    background-color: var(--lightgrey);
+    border-bottom: 1px solid var(--mediumgrey);
+}
+
+form{
+    padding: 0;
+}
+
+fieldset{
+    border: none;
+    margin: 0 0 1em 0;
+    padding: 1em;
+    border-bottom: 1px solid var(--mediumgrey);
+}
+
+fieldset.sub-section{
+    margin-left: 1em;
+    border-left: 3px solid var(--yellow);
+}
+
+legend{
+    font-weight: bold;
+    color: var(--darkblue);
+    padding: 0 0.5em;
+    font-size: 1em;
+}
+
+.question-header{
     background-color: var(--yellow);
+    padding: 0.5em;
+    margin: 1em 0;
+    font-weight: bold;
     box-shadow: 1px 1px 1px var(--darkblue);
 }
 
-main section:nth-of-type(1) h2 {
-    background-color: var(--darkblue);
-    color: var(--white);
-    padding: .5em;
+.form-group {
+    margin-bottom: 1em;
 }
 
-main section:nth-of-type(2) ol li {
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: var(--darkblue);
+    font-weight: 500;
+}
+
+.radio-group {
+    margin: 1em 0;
+}
+
+.radio-label {
     display: flex;
-    flex-direction: column;
-    padding: .5em;
-    margin: 1em;
+    align-items: flex-start;
+    margin-bottom: 0.5em;
 }
 
-main ul {
-    display: flex;
-    flex-direction: column;
+.radio-label input[type="radio"] {
+    margin-right: 0.5em;
+    margin-top: 0.2em;
 }
 
-main ul li {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    margin: .5em;
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-#intro {
-    padding: .5em;
-    margin-left: 1em;
-}
-
-input {
-    margin: .5em;
-    border-radius: 5%;
+input:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 2px rgba(0, 99, 211, 0.2);
+    outline: none;
+    background-color: var(--white);
 }
 
 input:user-invalid {
-    border: 2px solid red;
-
+    border: 2px solid var(--red);
 }
 
-/* input:user-invalid::before {
-    content: "+";
-    color: red;
-} */
+input:user-invalid:required{
+    background-color: rgba(219, 0, 41, 0.1);
+}
 
 input:user-valid {
     border: 2px solid var(--green);
 }
 
-input:user-invalid:required{
-    background-color: pink;
-    /* content: "+"; */
+input:user-valid:required {
+    background-color: rgba(0, 154, 66, 0.1);
 }
 
-input:user-valid:required{
-    background-color: var(--green) ;
-    
-}
-
-input:focus {
-    background-color: var(--grey);
-}
-
-
-input[type="text"] {
-    /* width: 100%; */
-    color: blue;
-}
-
-input[type="text"]:focus {
-    border: 3px solid var(--darkgrey);
-}
-
-
-
-
-#c,
-#akte,
-#beding,
-#kinderen {
+.name-inputs {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.name-inputs .form-group:nth-of-type(1) {
+    flex: 0 0 20%;
+}
+
+.name-inputs .form-group:nth-of-type(2) {
+    flex: 0 0 20%;
+}
+.name-inputs .form-group:nth-of-type(3) {
+    flex: 0 0 50%;
+}
+
+.hidden{
+    display: none;
+}
+
+button[type="submit"] {
+    background-color: var(--darkblue);
+    color: var(--white);
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 2em;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--blue);
+}
+
+
+/* Verberg de "Huwelijk details" als de gebruiker "Nee" kiest voor huwelijk */
+form:has(#nietgetrouwd:checked) #huwelijk-details {
+    display: none;
+}
+
+/* Verberg de "Akte details" als de gebruiker "Nee" kiest voor akte */
+form:has(#geen_akte:checked) #huwelijk-details .sub-section {
+    display: none;
+}
+
+/* Verberg de "Finaal verrekenbeding" als de gebruiker "Nee" kiest voor finaal */
+form:has(#finaal_no:checked) #huwelijk-details .form-group:nth-child(3) {
+    display: none;
+}
+
+/* Verberg de "Kinderen details" als de gebruiker "Nee" kiest voor kinderen */
+form:has(#geen_kinderen:checked) #kinderen-details {
+    display: none;
+}
+
+/* Verberg de "Kinderen details" als de gebruiker "Nee" kiest voor overleden kinderen */
+form:has(#kind_no:checked) #overleden-kind-details {
+    display: none;
+}
+
+/* Verberg de notaris sectie als de gebruiker "Nee" kiest voor testament */
+form:has(#geen_testament:checked) #notaris-details {
+    display: none;
+}
+/* Verberg de "Verkrijger details" als de gebruiker "Nee" kiest voor verkrijger */
+form:has(#niemand:checked) #verkrijger-details {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    form fieldset{
+        padding: 10px;
+    }
+
+    .name-inputs {
+        flex-direction: column;
+    }
+
+    .name-inputs .form-group {
+        flex: 0 0 100% !important;
+    }
 }
 
 
 
-ol:has(#getrouwd input[value="no"]:checked) #akte {
-    display: none;
-}
-
-ol:has(#getrouwd input[value="no"]:checked) #beding {
-    display: none;
-}
-
-ol:has(#b input[value="no"]:checked) #c {
-    display: none;
-}
-
-ol:has(#b input[value="no"]:checked) #kinderen {
-    display: none;
-}
 
 
-
-
-
-ol:has(#getrouwd input[value="no"]:checked) #beding {
-    display: none;
-}
-
-ol:has(#testament input[value="no"]:checked) #notaris {
-    display: none;
-}
-
-/* ol:has(#geen input[value="no"]:checked #verkrijger_een){
-    display: none;
-} */
-
-
-main ul:has(#geen input[value="no"]:checked) #verkrijger_een{
-    display: none;
-}
 
 /* draai de has om, zorg ervoor dat alles displayed is tenzij het niet nodig is, 
 verstop deze elementen dan  */
-
-
-li:nth-of-type(9) input {
-    border: 1px solid #555;
-}
-
-
-main section:nth-of-type(3) h2 {
-
-    background-color: var(--darkblue);
-    color: var(--white);
-    padding: .5em;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-
-fieldset {
-    display: flex;
-    flex-direction: column;
-
-    border: 2px solid var(--darkblue);
-}
