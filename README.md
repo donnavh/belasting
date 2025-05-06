@@ -38,3 +38,16 @@ in de afrondings fase heb  ik gekeken naar het zeker weten dat de elementen die 
 - ik heb verschillende soorten vragen geprobeerd in te brengen zodat in oefen met verschillende soorten inputs 
 - validation is toegevoegd maar alleen wanneer de gebruiker al interactie heeft gehad met een bepaald formulier 
 - de verkijgers toevoegen is mij niet meer gelukt maar het is wel gelukt dat als er geen verkrijgers zijn die het niet invullen dat deze velden ook niet getoond worden.
+
+
+## Herkansing
+
+Voordat ik aan dit vak begon had ik wel eens gewerkt met het maken van formulieren maar ik had nog niet veel ervaring. En uiteindelijk merkte ik dit toch. Ik wist dus niet goed hoe ik gebruik moest maken van bepaalde elementen die erg belangrijk zijn bij het opzetten van een formulier. Namelijk de <form>, <fieldset> en <legend> tags. Ik had helemaal geen gebruik gemaakt van de <form> tags, hierdoor kon mijn pagina helemaal niet zien dat ik een formulier wilde opzetten en laten invullen en het eigenlijk allemaal losse inputs waren die niet een geheeld vormden. 
+
+Toen ben ik in eerste instantie verschillende vragen gaan groeperen in <li> en heb ik deze in een <ul> en een <ol> gezet in eerste instantie. Wat eigenlijk ook slordig en niet consistent was. Ik had wel wat dingen geporobeerd te doen met de <fieldset> en <legend>, maar ik dacht dat dit bij een vraag wel genoeg zou zijn. Ik moest consistenter en netter worden in mijn code schrijven. Dus heb ik er toch voor gekozen om alles helemaal te verbeteren. En toch ook meer in de stijl van de NS te werken en niet slechts het kleurenthema te gebruiken. 
+
+Voor de herkansing heb ik de opzet van mijn html opnieuw gestructureerd en gebruik gemaakt van de juiste tags voor een formulier. 
+Ik ben begonnen met een <form> tag om alle andere elementen heen. Vervolgens bestaat elke groepering van vragen uit een <fieldset> waarbij de <legend> iets verteld over waar de vraag over gaat. 
+Vervolgens heb ik per vraag meer structuur, waarbij er eerst een <label> is en daarna de <input> die erbij hoort. Zo is het duidelijker welke labels bij de inputs horen en zijn de vragen beter gestructureerd. 
+
+Voor mij was het grootste probleem de structuur en niet genoeg formulier elementen gebruikt en na wat onderzoeken heb ik de structuur zowel als de vormgeving naar mijn idee goed kunnen verbeteren waardoor alles er nu beter uit ziet maar eigenlijk ook beter werkt. 
